@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>絕世好菠｜菠蘿包專賣店</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff8ee;
+}
+
+header {
+    background-color: #f4a261;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #e76f51;
+    text-align: center;
+    padding: 10px;
+}
+
+nav button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #f4a261;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1> 🫓 絕世好菠</h1>
+    <p>每日現烤・外酥內軟的極致口感</p>
+</header>
+<nav>
+    <button onclick="showSection('home')">首頁</button>
+    <button onclick="showSection('menu')">商品介紹</button>
+    <button onclick="showSection('about')">關於我們</button>
+</nav>
+
+<section id="home" class="active">
+    <h2>歡迎光臨</h2>
+    <div class="product">
+	<img src="照片/11.png" alt="店照片" style="width:500px; border-radius:10px;">
+        <p><strong>「外酥內軟的極致，咬下的每一口都是幸福。」</strong></p>
+        <p>絕世好菠專賣各式創意菠蘿包，堅持每日新鮮現烤。我們不僅守護經典，更研發出鹹甜交織的創意口味。</p>
+        
+        <p><strong>除了招牌菠蘿，我們還為您準備了：</strong></p>
+        <ul>
+            <li>🍳 <strong>現煎系列：</strong>金黃酥脆的蔥抓餅與蛋餅</li>
+            <li>🥤 <strong>正宗港飲：</strong>絲襪奶茶、凍檸茶，解膩首選</li>
+            <li>🥐 <strong>手工酥餅：</strong>綠豆酥、咖哩酥，療癒午茶首選</li>
+        </ul>
+        
+        <p>📍 <strong>新址現烤供應中：</strong>台北市大安區和平東路二段62巷2號B室</p>
+	<p>⏰ <strong>營業時間：07:00 - 18:00</strong></p>
+    </div>
+</section>
+
+<section id="menu">
+    <h2>商品介紹</h2>
+
+    <div class="product">
+        <h3>菜單圖片</h3>
+	<img src="照片/港式菠蘿.png" alt="港式菠蘿" style="width:200px; border-radius:10px;">
+	<img src="照片/港式飲品2.png" alt="港式飲品" style="width:205px; border-radius:10px;">
+	<img src="照片/蛋餅菜單.png" alt="蛋餅與蔥抓餅" style="width:410px; border-radius:10px;">
+	</div>
+    <div class="product">
+        <h3>原味菠蘿</h3>
+	<img src="照片/6.png" alt="原味菠蘿" style="width:200px; border-radius:10px;">
+        <p>售價：$35。外皮酥脆，內裡柔軟，經典必吃。</p>
+    </div>
+
+    <div class="product">
+        <h3>花生菠蘿</h3>
+        <p>售價：$40。濃郁花生香，口感香甜鬆軟。</p>
+    </div>
+
+    <div class="product">
+        <h3>椰奶菠蘿</h3>
+	<img src="照片/1.png" alt="椰奶菠蘿" style="width:200px; border-radius:10px;">
+        <p>售價：$40。口感柔軟的菠蘿包內夾上香濃椰奶餡，濃郁的椰香瞬間融化在口中，每一口都是熱帶風情的享受。這款清新而不甜膩的椰奶菠蘿絕對會成為午後的最佳搭配！</p>
+    </div>
+
+    <div class="product">
+        <h3>冰火菠蘿</h3>
+	<img src="照片/9.png" alt="冰火菠蘿" style="width:200px; border-radius:10px;">
+        <p>售價：$45。熱騰騰菠蘿包搭配冰涼奶油，口感絕妙。</p>
+    </div>
+
+    <div class="product">
+        <h3>起司菠蘿</h3>
+	<img src="照片/8.png" alt="起司菠蘿" style="width:200px; border-radius:10px;">
+        <p>售價：$45。融化的起司與酥皮結合，香氣十足。</p>
+    </div>
+
+    <div class="product">
+        <h3>冰火起司菠蘿</h3>
+	<img src="照片/7.png" alt="冰火起司菠蘿" style="width:200px; border-radius:10px;">
+
+        <p>售價：$50。冰火口感再升級，起司控的最愛，人氣推薦。</p>
+    </div>
+
+    <div class="product">
+        <h3>土鳳梨酥</h3>
+	<img src="照片/3.png" alt="土鳳梨酥" style="width:200px; border-radius:10px;">
+        <p>售價：$40。酥脆的外皮包裹著香甜的鳳梨餡，完美平衡酸甜滋味，每一口都充滿幸福。</p>
+    </div>
+	
+    <div class="product">
+        <h3>西冷紅茶</h3>
+        <p>售價：$25。傳統茶葉煮製，茶韻深厚。</p>
+    </div>
+
+    <div class="product">
+        <h3>冬瓜檸檬</h3>
+        <p>售價：$35。酸甜解膩，消暑首選。</p>
+    </div>
+
+    <div class="product">
+        <h3>絲襪奶茶</h3>
+        <p>售價：$40。口感滑順如絲，濃厚港式風味。</p>
+    </div>
+
+    <div class="product">
+        <h3>凍檸茶</h3>
+        <p>售價：$40。新鮮檸檬搭配紅茶，清爽無負擔。</p>
+    </div>
+
+    <div class="product">
+        <h3>鮪魚酥餅</h3>
+        <p>售價：$35。外皮層層酥香，內餡鮮美。</p>
+    </div>
+
+    <div class="product">
+        <h3>咖哩酥餅</h3>
+        <p>售價：$35。獨門咖哩配方，香氣撲鼻。</p>
+    </div>
+
+    <div class="product">
+        <h3>雞肉酥</h3>
+        <p>售價：$35。酥脆餅皮包裹多汁雞肉內餡。</p>
+    </div>
+
+    <div class="product">
+        <h3>2個荷包蛋</h3>
+        <p>售價：$30。現點現煎，營養滿分。</p>
+    </div>
+
+    <div class="product">
+        <h3>原味蛋餅</h3>
+        <p>售價：$30。經典台式早餐，厚實有嚼勁。</p>
+    </div>
+
+    <div class="product">
+       <h3>蔥抓餅</h3>
+       <p>售價：$40。外酥內 Q，層次分明。</p>
+    </div>
+
+    <div class="product">
+       <h3>蔥抓餅加蛋</h3>
+       <img src="照片/10.png" alt="蔥抓餅加蛋" style="width:200px; border-radius:10px;">
+       <p>售價：$50。黃金蛋液增添香氣，飽足感爆棚。</p>
+    </div>
+    
+    <div class="product">
+       <h3>加起司 / 加玉米</h3>
+       <p>售價：+$10。自由搭配，口感更豐富。</p>
+    </div>
+
+</section>
+<section id="about">
+    <h2>關於我們</h2>
+    <div class="product">
+        <h3>最道地的港式菠蘿專賣店</h3>
+        <p>絕世好菠致力於將正宗港式西餅帶入您的生活。我們不斷精進研發，持續推出令人驚艷的美味新品。現在，我們在更舒適的全新空間，誠摯邀請您前來品嚐外酥內軟的絕佳口感。</p>
+    </div>
+
+    <div class="product">
+        <h3>門市資訊</h3>
+        <p>🏠 台北市大安區和平東路二段62巷2號B室</p>
+	<p>⏰ <strong>營業時間：07:00 - 18:00</strong></p>
+        <p>☎️ (02) 2732-6199</p>
+        <p>📱 歡迎追蹤 IG 獲取最新優惠：EXCELLENT_PINEAPPLE</p>
+	<p><img src="照片/ig.png" alt="ig:qrcode" style="width:200px; border-radius:10px;">
+    </div>
+</section>
+
+<footer>
+    <p>© 絕世好菠 Pineapple Bun Shop</p>
+</footer>
+
+<script>
+function showSection(sectionId) {
+    let sections = document.querySelectorAll("section");
+    sections.forEach(section => {
+        section.classList.remove("active");
+    });
+    document.getElementById(sectionId).classList.add("active");
+}
+</script>
+
+</body>
+</html>
